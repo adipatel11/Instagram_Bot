@@ -7,7 +7,7 @@ Instaloader Python Module is Utilized to Remotely Log In to a Burner Account and
 
 Upon reading on the instaloader documentation, I found a wide variety of information that I could collect from certain Instagram profiles such as 
 user followers and followees. I have used this to create the non-follower program. This takes both of these items and determines the profiles that
-a user follows that does not follow them back. It takes these profiles and creates a new file in the same directory called "Non_Followers_List
+a user follows that does not follow them back. It takes these profiles and creates a new file in the same directory called "Non_Followers_List"
 containing all of them line by line. The account that will be searching will need to "log in" using the .login method, and the account that will 
 be searched for will need to have its username stored in the variable "searchee".
 
