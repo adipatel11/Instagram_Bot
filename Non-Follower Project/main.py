@@ -21,5 +21,17 @@ def main():
     intersection = followers.intersection(followees) # find the intersection and subtract from followees to find non-followers
     non_follow_backs = list(followees - intersection)
 
-    for profile in non_follow_backs: # display non-followers in terminal
-        print(profile)
+    createFile(non_follow_backs) # creates a file with all of the profiles listed in the same directory
+
+        
+def createFile(givenList):
+    outputFile = open('Non_Followers_List.txt', 'w')
+
+    for profile in givenList:
+        outputFile.write(f'{profile}\n')
+
+    outputFile.close()
+        
+        
+        
+main()
